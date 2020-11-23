@@ -1,6 +1,6 @@
 params =  {"cluster_column" : "cluster","min_k" : 2,"init" : "plus_plus","max_k" : 21, "nfolds" : 15, "max_iterations" : 10000}
 _helper.tablename='my new cluster file'
-    
+
 from h2o.estimators import H2OKMeansEstimator
 from h2o.grid.grid_search import H2OGridSearch
 import pandas as pd
@@ -14,7 +14,7 @@ def main():
 
 	dataset = _helper.data()
 	h_df = h2o.H2OFrame(dataset)
-	#print(h_df.columns)
+
 	col_ls = h_df.columns
 	# Performing grid search
 	kmeans_params1 = {'k': list(np.arange(params["min_k"], params["max_k"]))}
@@ -30,9 +30,6 @@ def main():
 	# Add Clusters
 	clustered_data = best_model.predict(h_df)
 	clust_df = clustered_data.as_data_frame()
-	#print(clust_df['predict'])
 	dataset[params["cluster_column"]] = clust_df['predict']
-	#dataset.to_csv(config["file_path"], index = False)
 	h2o.shutdown()
-	return _helper.publish(dataset,publish_path)
-    
+	return _helper.publish(dataset)
