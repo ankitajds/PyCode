@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import h2o
 import json
+import _helper
 import matplotlib.pyplot as plt
 
 def main():
