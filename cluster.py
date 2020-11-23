@@ -1,4 +1,4 @@
-params =  {"cluster_column" : "cluster","min_k" : 2,"init" : "plus_plus","max_k" : 21, "nfolds" : 15, "max_iterations" : 10000}
+params =  {"cluster_column" : "","min_k" : ,"init" : "plus_plus","max_k" : 21, "nfolds" : 15, "max_iterations" : 10000}
 _helper.tablename='my new cluster file'
 
 from h2o.estimators import H2OKMeansEstimator
