@@ -13,4 +13,6 @@ Following are the code snippets in python to be used in CafeEDA's PyCode Tile-
 
 5. [tf_idf.py](https://github.com/easydatain/PyCode/blob/main/tf_idf.py) - To calculate and create a vector space of term frequency inverse document frequency of a string column.
 
-6. [box_cox.py](https://github.com/easydatain/PyCode/blob/main/box_cox.py) -
+6. [box_cox.py](https://github.com/easydatain/PyCode/blob/main/box_cox.py) - Box-Cox Transform
+
+7'[exp_diff_transformer.py](https://github.com/easydatain/PyCode/blob/main/exp_diff_transformer.py) - Exponentiated difference of two numbers
