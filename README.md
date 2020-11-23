@@ -18,3 +18,5 @@ Following are the code snippets in python to be used in CafeEDA's PyCode Tile-
 7. [exp_diff_transformer.py](https://github.com/easydatain/PyCode/blob/main/exp_diff_transformer.py) - [Exponentiated difference of two numbers.]
 
 8. [log_transformer.py](https://github.com/easydatain/PyCode/blob/main/log_transformer.py) - [Converts numbers to their Logarithm.]
+
+9. [square.py](https://github.com/easydatain/PyCode/blob/main/square.py) - [To calculate the n power of integer columns]
