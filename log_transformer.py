@@ -1,4 +1,6 @@
 params={'column':''}
+_helper.tablename='my new filename'
+
 import pandas as pd
 import math
 import numpy as np
