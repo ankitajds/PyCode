@@ -1,4 +1,5 @@
 params ={'column':''}
+_helper.tablename='my new filename'
 
 from scipy import stats
 import pandas as pd
