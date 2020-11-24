@@ -1,6 +1,6 @@
 # enter the column name which has integer or float datatype
 # raised to the power m and n 
-params ={'column_1':'Score','column_2':'HelpfulnessDenominator','m':2 ,'n':3}
+params ={'column_1':'','column_2':'','m': ,'n':}
 import pandas as pd
 import math
 import json
