@@ -1,4 +1,4 @@
-params ={'column':'Score'}
+params ={'column':''}
 
 from scipy import stats
 import pandas as pd
