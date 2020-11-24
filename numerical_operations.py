@@ -1,4 +1,4 @@
-params =  {"columns" : ['Age','CarLoan','Balance'],'oper':'div'}
+params =  {"columns" : [],'oper':''}
 _helper.tablename='my new filename'
 
 
