@@ -1,7 +1,7 @@
 #Enter column names in the list defined below
 # pass the integer value in n variable for find square
 
-params={'column':['Age'],'m':2}
+params={'column':[],'m':}
 
 import pandas as pd
 import math
