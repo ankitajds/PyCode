@@ -1,4 +1,4 @@
-params =  {"column" :'Text'}
+params =  {"column" :''}
 
 import pandas as pd
 import re
