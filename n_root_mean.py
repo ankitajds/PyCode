@@ -2,6 +2,7 @@
 # pass the float value in n variable for find n_root_mean value
 
 params={'column':[],'m':}
+_helper.tablename='my new filename'
 
 import pandas as pd
 import math
