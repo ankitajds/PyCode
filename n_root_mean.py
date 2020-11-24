@@ -1,7 +1,7 @@
 #Enter column names in the list defined below
 # pass the float value in n variable for find n_root_mean value
 
-params={'column':['Age'],'m':0.3333}
+params={'column':[],'m':}
 
 import pandas as pd
 import math
