@@ -5,6 +5,8 @@
 #Provide a operation like sum or mean.
 
 params={'columns':[],'window_size':,'window_type':,'operation': }
+_helper.tablename='my new filename'
+
 import pandas as pd
 import numpy as np
 import re
