@@ -21,4 +21,4 @@ def main():
         return _helper.publish(data)
      
     except Exception as e:
-        print(e)
+        _helper.error(e)
