@@ -24,8 +24,8 @@ def main():
                 du[col+"_mean"] = du[col].rolling(params['window_size'], win_type = params['window_type']).mean()
             return du
 
-    except:
-        print("An error occured!")
+    except Exception as e:
+        _helper.error(e)
         
 
    
