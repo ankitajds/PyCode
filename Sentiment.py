@@ -60,7 +60,7 @@ def main():
         df['compound'] = lst_of_sent
         return _helper.publish(df)
         
-    except:
-        print("An error occured!")
+    except Exception as e:
+        _helper.error(e)
         
         
