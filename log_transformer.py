@@ -17,5 +17,5 @@ def main():
             print("column doesn't exist")
                
     except Exception as e:
-          print(e)
+        _helper.error(e)
         
