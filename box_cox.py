@@ -18,4 +18,4 @@ def main():
             return 'Column does not exist'
         
     except Exception as e:
-        print(e)
+        _helper.error(e)
