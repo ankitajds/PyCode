@@ -18,4 +18,4 @@ def main():
         else:
             print("'column doesn't exist in data")
     except Exception as e:
-        print(e)
+        _helper.error(e)
