@@ -22,7 +22,7 @@ def main():
                     print('Add Enter column names which have string datatype')
 
            
-    except:
-        print("An error occured!")
+    except Exception as e:
+        _helper.error(e)
             
           
