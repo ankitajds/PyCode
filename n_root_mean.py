@@ -21,4 +21,4 @@ def main():
 
 
     except Exception as e:
-        print(e)
+        _helper.error(e)
