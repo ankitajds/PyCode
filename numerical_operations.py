@@ -29,6 +29,7 @@ def main():
                 elif params['oper']=='div':
                     df['div'] /= df[col]
         return _helper.publish(data)
+    
     except Exception as e:
-        print(e)
+        _helper.error(e)
          
