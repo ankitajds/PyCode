@@ -19,7 +19,7 @@ Following are the code snippets in python to be used in CafeEDA's PyCode Tile-
 
 8. [log_transformer.py](https://github.com/easydatain/PyCode/blob/main/log_transformer.py) - [Converts integer or float column to their Logarithmic form]
 
-9. [n_power.py](https://github.com/easydatain/PyCode/blob/main/square.py) - [To calculate the n exponential power of integer or float columns]
+9. [n_power.py](https://github.com/easydatain/PyCode/blob/main/n_power.py) - [To calculate the n exponential power of integer or float columns]
 
 10. [n_root_mean.py](https://github.com/easydatain/PyCode/blob/main/n_root_mean.py) -[To calculate the n root mean of integer or float columns]
 
