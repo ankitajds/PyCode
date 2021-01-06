@@ -20,8 +20,11 @@ def main():
                 return 'Enter column names which have float  datatype'
 
 
+        _helper.status(fileid,2,'')
+        return _helper.publishbot(df)
+        
     except Exception as e:
-       _helper.error(e)
+        _helper.status(fileid,-2,e)
 
     
                     
