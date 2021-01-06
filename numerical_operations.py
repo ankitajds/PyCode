@@ -28,8 +28,10 @@ def main():
                     df['mul'] *= df[col]
                 elif params['oper']=='div':
                     df['div'] /= df[col]
-        return _helper.publish(data)
-    
+          
+        _helper.status(fileid,2,'')
+        return _helper.publishbot(df)
+        
     except Exception as e:
-        _helper.error(e)
+        _helper.status(fileid,-2,e)
          
