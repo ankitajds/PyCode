@@ -22,7 +22,10 @@ def main():
                     print('Add Enter column names which have string datatype')
 
            
+        _helper.status(fileid,2,'')
+        return _helper.publishbot(df)
+        
     except Exception as e:
-        _helper.error(e)
+        _helper.status(fileid,-2,e)
             
           
