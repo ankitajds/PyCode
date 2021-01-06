@@ -21,5 +21,5 @@ def main():
         _helper.status(fileid,2,'')
         return _helper.publishbot(data)
         
-     except Exception as e:
+    except Exception as e:
         _helper.status(fileid,-2,e)
