@@ -18,7 +18,8 @@ def main():
             data['positive_count'] = data.select_dtypes(include='int64' or 'float64').ge(0).sum(axis=1)
             data['positive_count'] = data.select_dtypes(include='int64' or 'float64').lt(0).sum(axis=1)
             
-        return _helper.publish(data)
-     
-    except Exception as e:
-        _helper.error(e)
+        _helper.status(fileid,2,'')
+        return _helper.publishbot(data)
+        
+     except Exception as e:
+        _helper.status(fileid,-2,e)
