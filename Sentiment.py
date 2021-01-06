@@ -58,9 +58,11 @@ def main():
                         pass
 
         df['compound'] = lst_of_sent
-        return _helper.publish(df)
+        _helper.status(fileid,2,'')
+        return _helper.publishbot(df)
         
     except Exception as e:
-        _helper.error(e)
+      
+        _helper.status(fileid,-2,e)
         
         
