@@ -22,10 +22,13 @@ def main():
                 du[col+"_sum"] = du[col].rolling(params['window_size'],win_type = params['window_type']).sum()
             elif params['operation'] =="mean":
                 du[col+"_mean"] = du[col].rolling(params['window_size'], win_type = params['window_type']).mean()
-            return du
+           
 
+        _helper.status(fileid,2,'')
+        return _helper.publishbot(df)
+        
     except Exception as e:
-        _helper.error(e)
+        _helper.status(fileid,-2,e)
         
 
    
