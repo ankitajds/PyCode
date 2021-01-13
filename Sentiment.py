@@ -62,7 +62,6 @@ def main():
         return _helper.publishbot(df)
         
     except Exception as e:
-      
         _helper.status(fileid,-2,e)
         
         
