@@ -10,16 +10,17 @@ import json
 import _helper
 
 def main():
-    try:
-        data = _helper.data() 
-        if params['column_1'] in data and params['column_2'] in data :
-            data['exp'] = pow(data[params['column_1']],params['m']) - pow(data[params['column_2']],params['n'])
-            return _helper.publish(data)
-        else:
-            print("'column doesn't exist in data")
-            
-        _helper.status(fileid,2,'')
-        return _helper.publishbot(df)
+    data = _helper.data() 
+    if params['column_1'] in data and params['column_2'] in data :
+        data['exp'] = pow(data[params['column_1']],params['m']) - pow(data[params['column_2']],params['n'])
+        return _helper.publish(data)
+    else:
+        print("'column doesn't exist in data")
+
+    return _helper.publish(data)
         
-    except Exception as e:
-        _helper.status(fileid,-2,e)
+try:
+    if main() != None:
+        _helper.status(_helper.fileid, 2,'Completed')
+except Exception as e:
+    _helper.status(_helper.fileid, -2,str(e))
