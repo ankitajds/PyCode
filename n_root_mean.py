@@ -9,16 +9,17 @@ import math
 import json
 import _helper
 def main():
-    try:
-        df = _helper.data()
-        for col in params['column']:
-            try:
-                df[col+"_n_root"]=df[col]**params['m']
-                return _helper.publish(df)
+    df = _helper.data()
+    for col in params['column']:
+        try:
+            df[col+"_n_root"]=df[col]**params['m']
+            return _helper.publish(df)
 
-            except:
-                return 'Enter column names which have float  datatype'
+        except:
+            return 'Enter column names which have float  datatype'
 
-
-    except Exception as e:
-        _helper.error(e)
+try:
+    if main() != None:
+        _helper.status(_helper.fileid, 2,'Completed')
+except Exception as e:
+    _helper.status(_helper.fileid, -2,str(e))
