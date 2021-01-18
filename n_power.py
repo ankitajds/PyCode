@@ -9,22 +9,22 @@ import math
 import json
 import _helper
 def main():
-    try:
-        df = _helper.data()
-        for col in params['column']:
-            try:
-                df[col+"_n_root"]=df[col]**params['m']
-                return _helper.publish(df)
+    df = _helper.data()
+    for col in params['column']:
+        try:
+            df[col+"_n_root"]=df[col]**params['m']
+            return _helper.publish(df)
 
-            except:
-                return 'Enter column names which have float  datatype'
+        except:
+            return 'Enter column names which have float  datatype'
 
-
-        _helper.status(fileid,2,'')
-        return _helper.publishbot(df)
+    return _helper.publish(df)
         
-    except Exception as e:
-        _helper.status(fileid,-2,e)
+try:
+    if main() != None:
+        _helper.status(_helper.fileid, 2,'Completed')
+except Exception as e:
+    _helper.status(_helper.fileid, -2,str(e))
 
     
                     
