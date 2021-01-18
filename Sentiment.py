@@ -58,7 +58,6 @@ def main():
                     pass
 
     df['compound'] = lst_of_sent
-    _helper.status(fileid,2,'')
     return _helper.publish(df)
         
 try:
