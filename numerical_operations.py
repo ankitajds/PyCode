@@ -1,37 +1,38 @@
 params =  {"columns" : [],'oper':''}
-_helper.tablename='my new filename'
+import _helper
 
 
 import pandas as pd
 import json
-import _helper
+
 
 
 def main():
-    try:
-        df = _helper.data()
-        for col in params['columns'][0:1]:
+    df = _helper.data()
+    for col in params['columns'][0:1]:
+        if params['oper']=='add':
+            df['add'] = df[col]
+        elif params['oper']=='sub':
+            df['sub'] = df[col]
+        elif params['oper']=='mul':
+            df['mul'] = df[col]
+        elif params['oper']=='div':
+            df['div'] = df[col]
+        for col in params['columns'][1:]:
             if params['oper']=='add':
-                df['add'] = df[col]
+                df['add'] += df[col]
             elif params['oper']=='sub':
-                df['sub'] = df[col]
+                df['sub'] -= df[col]
             elif params['oper']=='mul':
-                df['mul'] = df[col]
+                df['mul'] *= df[col]
             elif params['oper']=='div':
-                df['div'] = df[col]
-            for col in params['columns'][1:]:
-                if params['oper']=='add':
-                    df['add'] += df[col]
-                elif params['oper']=='sub':
-                    df['sub'] -= df[col]
-                elif params['oper']=='mul':
-                    df['mul'] *= df[col]
-                elif params['oper']=='div':
-                    df['div'] /= df[col]
-          
-        _helper.status(fileid,2,'')
-        return _helper.publishbot(df)
+                df['div'] /= df[col]
+
+    return _helper.publish(df)
         
-    except Exception as e:
-        _helper.status(fileid,-2,e)
+try:
+    if main() != None:
+        _helper.status(_helper.fileid, 2,'Completed')
+except Exception as e:
+    _helper.status(_helper.fileid, -2,str(e))
          
