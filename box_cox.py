@@ -16,7 +16,6 @@ def main():
     else:
         return 'Column does not exist'
 
-    _helper.status(fileid,2,'')
     return _helper.publish(df)
         
 try:
