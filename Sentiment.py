@@ -1,4 +1,5 @@
 params =  {"column" :''}
+import _helper
 #_helper.userdefinedTablename="ybl_banks"
 #_helper.fileid=5
 
@@ -7,7 +8,6 @@ import re
 from pandas import read_csv
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import json
-import _helper
 
 def main():
     df = _helper.data()
