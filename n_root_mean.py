@@ -2,12 +2,13 @@
 # pass the float value in n variable for find n_root_mean value
 
 params={'column':[],'m':}
+import _helper
 _helper.tablename='my new filename'
 
 import pandas as pd
 import math
 import json
-import _helper
+
 def main():
     df = _helper.data()
     for col in params['column']:
