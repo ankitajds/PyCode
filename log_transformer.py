@@ -6,7 +6,7 @@ import pandas as pd
 import math
 import numpy as np
 import json
-import _helper
+
 def main():
     data = _helper.data() 
     if params['column'] in data:
