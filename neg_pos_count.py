@@ -1,11 +1,12 @@
 params =  {"var" : ""}
+import _helper
 _helper.tablename='my new filename'
 
 import pandas as pd
 import math
 import numpy as np
 import json
-import _helper
+
 
 def main():
     data = _helper.data()
