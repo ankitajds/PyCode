@@ -1,4 +1,5 @@
 params ={'column' : }
+import _helper
 _helper.tablename='my new filename'
 
 import pandas as pd
@@ -6,7 +7,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 import nltk
 import json
-import _helper
+
+
 
 def main():
     df = _helper.data()
