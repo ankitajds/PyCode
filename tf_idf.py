@@ -9,23 +9,25 @@ import json
 import _helper
 
 def main():
-    try:
-        df = _helper.data()
-        tfidf = TfidfVectorizer()
-        if params['column'] in df:
-                try:
-                    tf_idf_data = tfidf.fit_transform(df[params['column']])
-                    tfidf_list = tf_idf_data.toarray()
-                    df_tfidf = pd.DataFrame(tfidf_list)
-                    return _helper.publish(df_tfidf)
-                except:
-                    print('Add Enter column names which have string datatype')
+    df = _helper.data()
+    tfidf = TfidfVectorizer()
+    if params['column'] in df:
+            try:
+                tf_idf_data = tfidf.fit_transform(df[params['column']])
+                tfidf_list = tf_idf_data.toarray()
+                df_tfidf = pd.DataFrame(tfidf_list)
+                return _helper.publish(df_tfidf)
+            except:
+                print('Add Enter column names which have string datatype')
 
-           
-        _helper.status(fileid,2,'')
-        return _helper.publishbot(df)
+
+
+    return _helper.publish(df)
         
-    except Exception as e:
-        _helper.status(fileid,-2,e)
+try:
+    if main() != None:
+        _helper.status(_helper.fileid, 2,'Completed')
+except Exception as e:
+    _helper.status(_helper.fileid, -2,str(e))
             
           
