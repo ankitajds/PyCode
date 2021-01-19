@@ -1,10 +1,11 @@
 params ={'column':''}
+import _helper
 _helper.tablename='my new filename'
 
 from scipy import stats
 import pandas as pd
 import json
-import _helper
+
 def main():
     df = _helper.data()
     if params['column'] in df:
