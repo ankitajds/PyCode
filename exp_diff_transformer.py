@@ -8,7 +8,7 @@ _helper.tablename='my new filename'
 import pandas as pd
 import math
 import json
-import _helper
+
 
 def main():
     data = _helper.data() 
