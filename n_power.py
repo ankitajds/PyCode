@@ -2,6 +2,7 @@
 # pass the integer value in n variable for find square
 
 params={'column':[],'m':}
+import _helper
 _helper.tablename='my new filename'
 
 import pandas as pd
