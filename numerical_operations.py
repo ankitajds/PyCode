@@ -17,6 +17,9 @@ def main():
             df['mul'] = df[col]
         elif oper =='div':
             df['div'] = df[col]
+        else:
+            return None
+        
         for col in columns[1:]:
             if oper =='add':
                 df['add'] += df[col]
@@ -26,6 +29,8 @@ def main():
                 df['mul'] *= df[col]
             elif oper =='div':
                 df['div'] /= df[col]
-
-    return _helper.publish(df)
+             return _helper.publish(df)
+            else:
+                return None
+        
          
