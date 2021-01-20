@@ -4,6 +4,7 @@ import re
 from pandas import read_csv
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import json
+#Enter the column which has string data type
 col=''
 
 def main():
