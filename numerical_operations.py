@@ -1,11 +1,7 @@
 params =  {"columns" : [],'oper':''}
 import _helper
-
-
 import pandas as pd
 import json
-
-
 
 def main():
     df = _helper.data()
