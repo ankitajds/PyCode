@@ -10,11 +10,11 @@ import json
 def main():
     df = _helper.data()
     for col in columns:
-        try:
+        if col in df.columns:
             df[col+"_n_root"]=df[col]**m
             return _helper.publish(df)
 
-        except:
-            return 'Enter column names which have float  datatype'
+        else:
+            return None
 
 
