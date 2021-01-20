@@ -2,9 +2,7 @@
 # raised to the power m and n 
 params ={'column_1':'','column_2':'','m': ,'n':}
 import _helper
-_helper.tablename='my new filename'
-
-
+#_helper.tablename='my new filename'
 import pandas as pd
 import math
 import json
