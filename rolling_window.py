@@ -6,8 +6,7 @@
 
 params={'columns':[],'window_size':,'window_type':,'operation': }
 import _helper
-_helper.tablename='my new filename'
-
+#_helper.tablename='my new filename'
 import pandas as pd
 import numpy as np
 import re
