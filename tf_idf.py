@@ -7,8 +7,6 @@ from sklearn.feature_extraction.text import TfidfTransformer
 import nltk
 import json
 
-
-
 def main():
     df = _helper.data()
     tfidf = TfidfVectorizer()
