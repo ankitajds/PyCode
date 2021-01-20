@@ -1,6 +1,6 @@
-params ={'column' : }
+#Enter the column which has string data type
+column=''
 import _helper
-#_helper.tablename='my new filename'
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -10,9 +10,9 @@ import json
 def main():
     df = _helper.data()
     tfidf = TfidfVectorizer()
-    if params['column'] in df:
+    if column in df:
             try:
-                tf_idf_data = tfidf.fit_transform(df[params['column']])
+                tf_idf_data = tfidf.fit_transform(df[column])
                 tfidf_list = tf_idf_data.toarray()
                 df_tfidf = pd.DataFrame(tfidf_list)
                 return _helper.publish(df_tfidf)
@@ -23,10 +23,5 @@ def main():
 
     return _helper.publish(df)
         
-try:
-    if main() != None:
-        _helper.status(_helper.fileid, 2,'Completed')
-except Exception as e:
-    _helper.status(_helper.fileid, -2,str(e))
             
           
