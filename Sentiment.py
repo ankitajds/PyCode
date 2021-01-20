@@ -4,6 +4,7 @@ import re
 from pandas import read_csv
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import json
+col=''
 
 def main():
     df = _helper.data()
@@ -22,8 +23,8 @@ def main():
     str1 = ''
     final_str = []
     #Enter the column which has string data type
-    if 'column' in df.columns:
-        for sent in df['column'].values:
+    if col in df.columns:
+        for sent in df[col].values:
             filtered_sent = []
             sent          = cleanhtml(sent)
             for word in sent.split():
@@ -32,7 +33,7 @@ def main():
                         filtered_sent.append(clean_words.lower())
             lst_of_sent.append(filtered_sent)
     else:
-        print("Column does not exist ")
+        return None
 
     for lst in lst_of_sent:
         str1 = ' '.join(lst)
