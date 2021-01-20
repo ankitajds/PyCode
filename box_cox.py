@@ -1,7 +1,6 @@
 params ={'column':''}
 import _helper
-_helper.tablename='my new filename'
-
+#_helper.tablename='my new filename'
 from scipy import stats
 import pandas as pd
 import json
