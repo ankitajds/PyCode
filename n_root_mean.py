@@ -1,5 +1,5 @@
 #Enter column names in the list defined below
-#columns=[]
+columns=[]
 # pass the float value in n variable for find n_root_mean value
 m=
 import _helper
@@ -9,7 +9,7 @@ import json
 
 def main():
     df = _helper.data()
-    for col in 'columns':
+    for col in columns:
         try:
             df[col+"_n_root"]=df[col]**m
             return _helper.publish(df)
