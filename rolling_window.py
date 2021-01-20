@@ -1,5 +1,5 @@
 #Enter column names in the list defined below
-columns = [ ]
+columns = []
 #window size is the number of observations used for calculating the statistic.
 win_size=
 #Provide a window type like boxcar , hamming ,triang , blackman.
