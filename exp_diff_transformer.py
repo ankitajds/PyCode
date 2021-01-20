@@ -16,6 +16,6 @@ def main():
         data['exp'] = pow(data['column_1'],m]) - pow(data['column_2'],n])
         return _helper.publish(data)
     else:
-        print("'column doesn't exist in data")
+        return None
 
-    return _helper.publish(data)
+    
