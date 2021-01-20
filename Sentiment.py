@@ -1,7 +1,4 @@
-params =  {"column" :''}
 import _helper
-#_helper.userdefinedTablename="ybl_banks"
-#_helper.fileid=5
 import pandas as pd
 import re
 from pandas import read_csv
@@ -24,9 +21,9 @@ def main():
     lst_of_sent = []
     str1 = ''
     final_str = []
-
-    if params['column'] in df:
-        for sent in df[params['column']].values:
+    #Enter the column which has string data type
+    if 'column' in df.columns:
+        for sent in df['column'].values:
             filtered_sent = []
             sent          = cleanhtml(sent)
             for word in sent.split():
@@ -59,10 +56,6 @@ def main():
     df['compound'] = lst_of_sent
     return _helper.publish(df)
         
-try:
-    if main() != None:
-        _helper.status(_helper.fileid, 2,'Completed')
-except Exception as e:
-    _helper.status(_helper.fileid, -2,str(e))
+
         
         
