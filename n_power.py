@@ -1,30 +1,21 @@
-#Enter column names in the list defined below
-# pass the integer value in n variable for find square
-
-params={'column':[],'m':}
 import _helper
-#_helper.tablename='my new filename'
 import pandas as pd
 import math
 import json
-
+# pass the integer value in n variable for find square
+n=
 def main():
     df = _helper.data()
-    for col in params['column']:
+    #Enter column names in the list defined below
+    for col in 'columns':
         try:
-            df[col+"_n_root"]=df[col]**params['m']
+            df[col+"_n_root"]=df[col]**n
             return _helper.publish(df)
 
         except:
             return 'Enter column names which have float  datatype'
 
     return _helper.publish(df)
-        
-try:
-    if main() != None:
-        _helper.status(_helper.fileid, 2,'Completed')
-except Exception as e:
-    _helper.status(_helper.fileid, -2,str(e))
 
     
                     
