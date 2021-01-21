@@ -11,17 +11,10 @@ def main():
     df = _helper.data()
     tfidf = TfidfVectorizer()
     if column in df:
-            try:
-                tf_idf_data = tfidf.fit_transform(df[column])
-                tfidf_list = tf_idf_data.toarray()
-                df_tfidf = pd.DataFrame(tfidf_list)
-                return _helper.publish(df_tfidf)
-            except:
-                print('Add Enter column names which have string datatype')
-
-
-
-    return _helper.publish(df)
-        
-            
-          
+        tf_idf_data = tfidf.fit_transform(df[column])
+        tfidf_list = tf_idf_data.toarray()
+        df_tfidf = pd.DataFrame(tfidf_list)
+        return _helper.publish(df_tfidf)
+    else:
+        return None
+  
