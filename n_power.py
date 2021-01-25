@@ -11,7 +11,7 @@ def main():
     df = _helper.data()
     for col in columns:
         if col in df.columns:
-            df[col+"_n_root"]=df[col]**n
+            df[col+"_n_root"]=pd.to_numeric(df[col])**n
             return _helper.publish(df)
         else:
             return None
