@@ -48,13 +48,19 @@ def main():
     lst_of_sent = []
     for sentence in final_str:
         vs = analyzer.polarity_scores(sentence)
-        for item in vs.items():
-            for key in item:
-                if key == 'compound':
-                    lst_of_sent.append(vs[key])
+        for key, item in vs.items():
+            if key == 'compound':
+                print(item)
+                lst_of_sent.append(item)
+            elif key=='neg' or key=='pos'or key== 'neu':
+                pass
+            else:
+                return None
 
+    
     df['compound'] = lst_of_sent
     return _helper.publish(df)
+
         
 
         
