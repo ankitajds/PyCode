@@ -52,8 +52,6 @@ def main():
             for key in item:
                 if key == 'compound':
                     lst_of_sent.append(vs[key])
-                else:
-                    return None
 
     df['compound'] = lst_of_sent
     return _helper.publish(df)
