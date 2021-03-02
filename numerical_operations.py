@@ -7,7 +7,7 @@ import pandas as pd
 import json
 
 def main():
-    df = _helper.data()
+    df = _helper.data_recipe()
     for col in columns[0:1]:
         if oper =='add':
             df['add'] = df[col]
