@@ -8,7 +8,7 @@ import nltk
 import json
 
 def main():
-    df = _helper.data()
+    df = _helper.data_recipe()
     tfidf = TfidfVectorizer()
     if column in df:
         tf_idf_data = tfidf.fit_transform(df[column])
