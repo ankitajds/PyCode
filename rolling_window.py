@@ -15,7 +15,7 @@ import json
 
 
 def main():
-    du = _helper.data()
+    du = _helper.data_recipe()
     for col in columns :
         if operation =="sum":
             du[col+"_sum"] = du[col].rolling(win_size, win_type = window_type).sum()
