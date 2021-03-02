@@ -16,7 +16,4 @@ def main():
         else:
             return None
         
-     return _helper.publish(df)
-
-    
-                    
+    return _helper.publish(df)
