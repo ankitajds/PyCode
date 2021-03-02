@@ -14,7 +14,9 @@ def main():
         tf_idf_data = tfidf.fit_transform(df[column])
         tfidf_list = tf_idf_data.toarray()
         df_tfidf = pd.DataFrame(tfidf_list)
-        return _helper.publish(df_tfidf)
+        
     else:
         return None
+    
+    return _helper.publish(df_tfidf)
   
