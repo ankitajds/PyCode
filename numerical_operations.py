@@ -23,17 +23,18 @@ def main():
         for col in columns[1:]:
             if oper =='add':
                 df['add'] += df[col]
-                return _helper.publish(df)
+                
             elif oper =='sub':
                 df['sub'] -= df[col]
-                return _helper.publish(df)
+                
             elif oper =='mul':
                 df['mul'] *= df[col]
-                return _helper.publish(df)
+                
             elif oper =='div':
                 df['div'] /= df[col]
-                return _helper.publish(df)
+                
             else:
                 return None
-        
+            
+    return _helper.publish(df)
          
