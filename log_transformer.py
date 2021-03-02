@@ -10,10 +10,12 @@ def main():
     data = _helper.data() 
     #Enter the integer or float column
     if column in data:
-        data['logarithm_base10'] = np.log10(pd.to_numeric(data[column]))
-        return  _helper.publish(data)
+        data['logarithm_base10'] = np.log10(data[column])
+        
 
     else:
         return None
+    
+    return  _helper.publish(data)
   
         
