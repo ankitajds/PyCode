@@ -19,9 +19,10 @@ def main():
     for col in columns :
         if operation =="sum":
             du[col+"_sum"] = du[col].rolling(win_size, win_type = window_type).sum()
-            return _helper.publish(du)
+            
         elif operation =="mean":
             du[col+"_mean"] = du[col].rolling(win_size, win_type = window_type).mean()
-            return _helper.publish(du)
+            
         else:
             return None
+    return _helper.publish(du)
