@@ -40,7 +40,7 @@ def main():
         str1 = ' '.join(lst)
         final_str.append(str1)
 
-    df['clean_Text'] = final_str
+    df[col] = final_str
 
     #Extract sentiment from text
 
