@@ -11,13 +11,13 @@ def main():
     df = _helper.data_recipe()
     #clean html
     def cleanhtml(sent):
-        clean = re.sub(r'<*?>', r' ', sent)
+        clean = re.sub(r'<*?>', r' ', str(sent))
         return clean
 
     #clean punctuation
     def cleanpunc(word):
-        cleanr = re.sub(r'[?|!|\'|"|#]', r' ', word)
-        cleaned = re.sub(r'[)|(|\|/]', r' ', cleanr)
+        cleanr = re.sub(r'[?|!|\'|"|#]', r' ', str(word))
+        cleaned = re.sub(r'[)|(|\|/]', r' ', str(cleanr))
         return cleaned
 
     lst_of_sent = []
