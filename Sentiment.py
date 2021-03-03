@@ -8,7 +8,7 @@ import json
 col=''
 
 def main():
-    df = _helper.data_recipe()
+    df = _helper.data()
     #clean html
     def cleanhtml(sent):
         clean = re.sub(r'<*?>', r' ', str(sent))
