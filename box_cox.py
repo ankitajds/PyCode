@@ -5,7 +5,7 @@ import json
 #Enter the column which has integer data type.Column should be >=0
 col=''
 def main():
-    df = _helper.data_recipe()
+    df = _helper.data()
     if col in df:
         if df[col].dtypes=='float64':
             df[col]=df[col].astype(int)
