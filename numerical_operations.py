@@ -7,31 +7,31 @@ import pandas as pd
 import json
 
 def main():
-    df = _helper.data_recipe()
+    df = _helper.data()
     for col in columns[0:1]:
         if oper =='add':
-            df['add'] = df[col]
+            df['add'] = df[col].astype('int64')
         elif oper =='sub':
-            df['sub'] = df[col]
+            df['sub'] = df[col].astype('int64')
         elif oper =='mul':
-            df['mul'] = df[col]
+            df['mul'] = df[col].astype('int64')
         elif oper =='div':
-            df['div'] = df[col]
+            df['div'] = df[col].astype('int64')
         else:
             return None
         
         for col in columns[1:]:
             if oper =='add':
-                df['add'] += df[col]
+                df['add'] += df[col].astype('int64')
                 
             elif oper =='sub':
-                df['sub'] -= df[col]
+                df['sub'] -= df[col].astype('int64')
                 
             elif oper =='mul':
-                df['mul'] *= df[col]
+                df['mul'] *= df[col].astype('int64')
                 
             elif oper =='div':
-                df['div'] /= df[col]
+                df['div'] /= df[col].astype('int64')
                 
             else:
                 return None
