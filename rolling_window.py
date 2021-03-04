@@ -15,14 +15,15 @@ import json
 
 
 def main():
-    du = _helper.data_recipe()
+    du = _helper.data()
     for col in columns :
         if operation =="sum":
-            du[col+"_sum"] = du[col].rolling(win_size, win_type = window_type).sum()
+            du[col+"_sum"] = du[col].astype('int64').rolling(win_size, win_type = window_type).sum()
             
         elif operation =="mean":
-            du[col+"_mean"] = du[col].rolling(win_size, win_type = window_type).mean()
+            du[col+"_mean"] = du[col].astype('int64').rolling(win_size, win_type = window_type).mean()
             
         else:
             return None
+        
     return _helper.publish(du)
