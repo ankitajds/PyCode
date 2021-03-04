@@ -7,7 +7,7 @@ import numpy as np
 import json
 
 def main():
-    data = _helper.data_recipe() 
+    data = _helper.data() 
     #Enter the integer or float column
     if column in data:
         data['logarithm_base10'] = np.log10(data[column])
