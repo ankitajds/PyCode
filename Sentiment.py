@@ -50,7 +50,6 @@ def main():
         vs = analyzer.polarity_scores(sentence)
         for key, item in vs.items():
             if key == 'compound':
-                print(item)
                 lst_of_sent.append(item)
             elif key=='neg' or key=='pos'or key== 'neu':
                 pass
