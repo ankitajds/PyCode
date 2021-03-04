@@ -12,7 +12,7 @@ def main():
     for col in columns:
         if col in df.columns:
             df[col]=df[col].astype('int64')
-            df[col+"_n_root"]=df[col]**n
+            df[col+"_n_power"]=df[col]**n
             
         else:
             return None
