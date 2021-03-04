@@ -10,7 +10,7 @@ import math
 import json
 
 def main():
-    data = _helper.data_recipe() 
+    data = _helper.data() 
     if column_1 in data.columns and column_2 in data.columns : #Enter column 1 and column 2
         data['exp'] = pow(data[column_1],m) - pow(data[column_2],n)
         
