@@ -10,9 +10,10 @@ def main():
     data = _helper.data() 
     #Enter the integer or float column
     if column in data:
-        data['logarithm_base10'] = np.log10(data[column])
-        
-
+        if data[column].dtypes=='int64' or'float64':
+            data['logarithm_base10'] = np.log10(data[column])
+        else:
+            pass
     else:
         return None
     
