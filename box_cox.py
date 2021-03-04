@@ -6,13 +6,13 @@ import json
 col=''
 def main():
     df = _helper.data()
-     if col in df:
+    if col in df:
         df[col] =df[col].astype('int64')
         transform = df[col].values
         # transform values and store as "dft"
         dft = stats.boxcox(transform)
         df['box_cox'] = dft[0]
-    
+
     else:
         return None
     
