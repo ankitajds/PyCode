@@ -7,11 +7,13 @@ import numpy as np
 import json
 
 def main():
-    data = _helper.data() 
-    #Enter the integer or float column
-    data[column] =data[column].astype('float64')
-    data['logarithm_base10'] = np.log10(data[column])
+    data = _helper.data()
+    if column in data:
+        data[column] =data[column].astype('int64')
+        data['logarithm_base10'] = np.log10(data[column])
+    
+    else:
+        return None
     
     return  _helper.publish(data)
-  
         
