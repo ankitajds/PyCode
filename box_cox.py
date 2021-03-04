@@ -6,21 +6,16 @@ import json
 col=''
 def main():
     df = _helper.data()
-    if col in df:
-        if df[col].dtypes=='float64':
-            df[col]=df[col].astype(int)
-            transform = df[col].values
-            # transform values and store as "dft"
-            dft = stats.boxcox(transform)
-            df['box_cox'] = dft[0]
-        elif df[col].dtypes=='int64':
-            transform = df[col].values
-            # transform values and store as "dft"
-            dft = stats.boxcox(transform)
-            df['box_cox'] = dft[0]
-        
+     if col in df:
+        df[col] =df[col].astype('int64')
+        transform = df[col].values
+        # transform values and store as "dft"
+        dft = stats.boxcox(transform)
+        df['box_cox'] = dft[0]
+    
     else:
         return None
+    
     
     return _helper.publish(df)
 
