@@ -11,6 +11,7 @@ def main():
     df = _helper.data_recipe()
     for col in columns:
         if col in df.columns:
+            df[col]=df[col].astype('int64')
             df[col+"_n_root"]=df[col]**n
             
         else:
