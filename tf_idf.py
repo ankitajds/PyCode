@@ -4,7 +4,6 @@ import _helper
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-import nltk
 import json
 
 def main():
