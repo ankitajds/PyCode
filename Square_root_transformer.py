@@ -1,1 +1,20 @@
+#Enter the column names in the list below
+col=[]
 
+import _helper
+import pandas as pd
+from numpy import log
+from numpy import sqrt
+
+
+def main():
+    df = _helper.data()
+    for c in col:
+        if c in df:
+            df[c] =df[c].astype('int64')
+            df[c + 'sqrt_col'] = sqrt(df[c])
+
+        else:
+            return None
+    
+    return _helper.publish(df)
