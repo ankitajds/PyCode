@@ -22,6 +22,7 @@ Following are the code snippets in python to be used in CafeEDA's PyCode Tile-
 10. [n_root_mean.py](https://github.com/easydatain/PyCode/blob/main/n_root_mean.py) -[To calculate the n root mean of integer or float columns]
 
 11. [rolling_window.py](https://github.com/easydatain/PyCode/blob/main/rolling_window.py) - [To perform TimeSeries feature engineering using rolling window method] 
-12. [Power_transformer.py](https://github.com/easydatain/PyCode/blob/main/Power_transformer.py) -[ To perform power transformations for numerical data ]
-13. [Square_root_transformer.py](https://github.com/easydatain/PyCode/blob/main/Square_root_transformer.py) - [ To perform square_root transformations for numerical data]  
-14. [Rank_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_transformer.py) - [ To perform rank transformer for  numerical data]
+12. [Power_transformer.py](https://github.com/easydatain/PyCode/blob/main/Power_transformer.py) -[ To perform power transformation for numerical data ]
+13. [Square_root_transformer.py](https://github.com/easydatain/PyCode/blob/main/Square_root_transformer.py) - [ To perform square_root transformation for numerical data]  
+14. [Rank_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_transformer.py) - [ To perform rank transformation for  numerical data]
+15. [Rank_gauss_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_gauss_transformer.py_ - [ To perforn rank gauss transformation for numerical data ]
