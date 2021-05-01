@@ -1,10 +1,13 @@
+#Enter column names in the list defined below
+col=[]
+
 import _helper
 from scipy import stats
 import pandas as pd
 import json
 from sklearn.preprocessing import PowerTransformer
 
-col=[]
+
 def main():
     df = _helper.data()
     for c in col:
