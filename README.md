@@ -25,4 +25,4 @@ Following are the code snippets in python to be used in CafeEDA's PyCode Tile-
 12. [Power_transformer.py](https://github.com/easydatain/PyCode/blob/main/Power_transformer.py) -[ To perform power transformation for numerical data ]
 13. [Square_root_transformer.py](https://github.com/easydatain/PyCode/blob/main/Square_root_transformer.py) - [ To perform square_root transformation for numerical data]  
 14. [Rank_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_transformer.py) - [ To perform rank transformation for  numerical data]
-15. [Rank_gauss_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_gauss_transformer.py_ - [ To perforn rank gauss transformation for numerical data ]
+15. [Rank_gauss_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_gauss_transformer.py) - [ To perforn rank gauss transformation for numerical data ]
