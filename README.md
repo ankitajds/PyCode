@@ -21,4 +21,5 @@ Following are the code snippets in python to be used in CafeEDA's PyCode Tile-
 
 10. [n_root_mean.py](https://github.com/easydatain/PyCode/blob/main/n_root_mean.py) -[To calculate the n root mean of integer or float columns]
 
-11. [rolling_window.py](https://github.com/easydatain/PyCode/blob/main/rolling_window.py) - [To perform TimeSeries feature engineering using rolling window method]
+11. [rolling_window.py](https://github.com/easydatain/PyCode/blob/main/rolling_window.py) - [To perform TimeSeries feature engineering using rolling window method] 
+12. [Power_transformer.py](https://github.com/easydatain/PyCode/blob/main/Power_transformer.py) -[ To perform data transformations for numerical data ]
