@@ -11,7 +11,6 @@ def main():
     df = _helper.data()
     for c in col:
         if c in df:
-            df[c] =df[c].astype('int64')
             df[c + 'sqrt_col'] = sqrt(df[c])
 
         else:
