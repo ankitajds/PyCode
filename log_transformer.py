@@ -9,7 +9,6 @@ import json
 def main():
     data = _helper.data()
     if column in data:
-        data[column] =data[column].astype('int64')
         data['logarithm_base10'] = np.log10(data[column])
     
     else:
