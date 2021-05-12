@@ -9,8 +9,6 @@ import json
 
 def main():
     data = _helper.data()
-    for col in df.columns:
-        df[col]=df[col].astype('int64')
     if var == 'positive':
         data['positive_count'] = data.select_dtypes(include='number').ge(1).sum(axis=1)
         
