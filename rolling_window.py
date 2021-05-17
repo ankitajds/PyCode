@@ -1,10 +1,10 @@
 #Enter column names in the list defined below
-columns = ['RowNumber','Age']
+columns = ['']
 
 #window size is the number of observations used for calculating the statistic.
-win_size='2s'
+win_size=
 
-win_size_type = 'window_by_column'
+win_size_type = ''
 #window_by_row - Window size by number of rows (For eq - 1,2,3,4,5...)
 #window_by_time- Window size by datetime (For eq - '1D','1H','1min','1s'....)
 
@@ -13,7 +13,7 @@ win_size_type = 'window_by_column'
 #window_type only to be used when window_by_row as selected as in window_size_type
 
 #Provide a operation like sum or mean or median or count or variance or quantile.
-operation='quantile'
+operation=''
 
 percentile=0.2
 #provide a first quantile 0-0.25 or second quantile 0.25-0.50 or third quantile 0.50-0.75 or 4th quantile 0.75-1.00
