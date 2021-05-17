@@ -27,3 +27,4 @@ Following are the code snippets in python to be used in CafeEDA's PyCode Tile-
 14. [Rank_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_transformer.py) - [ To perform rank transformation for  numerical data]
 15. [Rank_gauss_transformer.py](https://github.com/easydatain/PyCode/blob/main/Rank_gauss_transformer.py) - [ To perforn rank gauss transformation for numerical data ]
 16. [onesample_statistical_test.py](https://github.com/easydatain/PyCode/blob/main/onesample_statistical_tests.py) -[ To perform one sample test]
+17. [twosample_statistical_test.py](https://github.com/easydatain/PyCode/blob/main/twosample_statiistical.py) -[To perform two sample test]
