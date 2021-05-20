@@ -5,7 +5,7 @@ col_1=''
 col_2=''
 
 #enter t_test
-t_test='median t_test'
+t_test=''
 import numpy as np
 import pandas as pd
 import _helper
