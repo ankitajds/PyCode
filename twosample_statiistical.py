@@ -12,8 +12,7 @@ import _helper
 from scipy.stats import ttest_ind,ks_2samp, median_test
 
 def main():
-    df= pd.read_csv(r'D:\eda\outlier_data.csv')
-    #df=_helper.data()
+    df=_helper.data()
     if t_test=='student t_test':
         # null hypothesis: expected value =
         a = df.loc[df[col_1] == df[col_1].value_counts().index[0], col_2].to_numpy()
