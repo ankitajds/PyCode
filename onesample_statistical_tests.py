@@ -10,7 +10,7 @@ def main():
     df= _helper.data()
     if t_test=='student t_test':
         # null hypothesis: expected value =
-        t_statistic, p_value = ttest_1samp(df[col], df[col].mean())
+        t_statistic, p_value = ttest_1samp(df[col], 0)
     elif t_test=='sign_test':
         # one sample wilcoxon-test
         z_statistic, p_value = wilcoxon(df[col])
