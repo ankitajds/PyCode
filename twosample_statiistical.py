@@ -6,10 +6,11 @@ col_2=''
 t_test=''
 import numpy as np
 import _helper
+import pandas as pd
 from scipy.stats import ttest_ind,ks_2samp, median_test
 
 def main():
-    df= pd.read_csv(r'D:\eda\dataset\wineQualityReds.csv')
+    df= _helper.data()
     if t_test=='student t_test':
         # null hypothesis: expected value =
         t_statistic, p_value = ttest_ind(df[col_1], df[col_2])
