@@ -12,10 +12,6 @@ method_type=''
 #Provide a method type like expanding or rolling
 #If method_type is expanding so it only works on window_by_row and window_type should be a comment.
 
-#Provide a window type like boxcar , hamming ,triang , blackman.
-window_type=''
-#window_type only to be used when window_by_row as selected as in window_size_type
-
 #Provide a operation like sum or mean or median or count or variance or quantile.
 operation=''
 
@@ -38,10 +34,10 @@ def main():
         if method_type=='rolling':
             if win_size_type=='window_by_row':
                 if operation =="sum":
-                    df[col+"_sum"] = df[col].rolling(win_size, win_type = window_type).sum()
+                    df[col+"_sum"] = df[col].rolling(win_size).sum()
 
                 elif operation =="mean":
-                    df[col+"_mean"] = df[col].rolling(win_size, win_type = window_type).mean()
+                    df[col+"_mean"] = df[col].rolling(win_size).mean()
 
                 elif operation =="median":
                     df[col + "_median"] = df[col].rolling(win_size).median()
