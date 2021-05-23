@@ -56,7 +56,7 @@ def main():
                     df[col + "_variance"] = df[col].rolling(win_size).var()
 
 
-            elif win_size_type=='window_by_column':
+            elif win_size_type=='window_by_time':
 
                 if type(df.index) == pandas.core.indexes.datetimes.DatetimeIndex :
 
