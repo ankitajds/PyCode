@@ -44,16 +44,16 @@ def main():
                     df[col+"_mean"] = df[col].rolling(win_size, win_type = window_type).mean()
 
                 elif operation =="median":
-                    df[col + "_median"] = df[col].rolling(win_size, win_type = window_type).median()
+                    df[col + "_median"] = df[col].rolling(win_size).median()
 
                 elif operation =="count":
-                    df[col + "_count"] = df[col].rolling(win_size, win_type = window_type).count()
+                    df[col + "_count"] = df[col].rolling(win_size).count()
 
                 elif operation =="quantile":
-                    df[col + "_quantile"] = df[col].rolling(win_size, win_type = window_type).quantile(percentile)
+                    df[col + "_quantile"] = df[col].rolling(win_size).quantile(percentile)
 
                 else:
-                    df[col + "_variance"] = df[col].rolling(win_size, win_type = window_type).var()
+                    df[col + "_variance"] = df[col].rolling(win_size).var()
 
 
             elif win_size_type=='window_by_column':
